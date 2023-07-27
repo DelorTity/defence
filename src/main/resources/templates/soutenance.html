@@ -144,6 +144,10 @@
                             <th scope="col">Actions</th>
                         </tr>
                         </thead>
+                        <div th:if="${message}" class="mx-auto align items-center row col-lg-12 alert alert-danger alert-dismissible fade show pt-3" role="alert">
+                            <span th:text="${message}"></span>
+                            <button type="button" class="btn-close" data-bs-dismiss="alert" aria-label="Close"></button>
+                        </div>
                         <tbody>
                         <tr th:each="defenses : ${defenses}">
                             <td th:text="${defenses.student.firstName}"></td>

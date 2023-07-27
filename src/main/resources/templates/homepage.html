@@ -1,0 +1,489 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8">
+  <meta content="width=device-width, initial-scale=1.0" name="viewport">
+
+  <title>Dashboard - NiceAdmin Bootstrap Template</title>
+  <meta content="" name="description">
+  <meta content="" name="keywords">
+
+  <link href="https://fonts.gstatic.com" rel="preconnect">
+  <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,300i,400,400i,600,600i,700,700i|Nunito:300,300i,400,400i,600,600i,700,700i|Poppins:300,300i,400,400i,500,500i,600,600i,700,700i" rel="stylesheet">
+
+  <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.8/dist/umd/popper.min.js" integrity="sha384-I7E8VVD/ismYTF4hNIPjVp/Zjvgyol6VFvRkX/vR+Vc4jQkC+hVqc2pM8ODewa9r" crossorigin="anonymous"></script>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.min.js" integrity="sha384-fbbOQedDUMZZ5KreZpsbe1LCZPVmfTnH7ois6mU1QK+m14rQ1l2bGBq41eYeM/fS" crossorigin="anonymous"></script>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.5.0/font/bootstrap-icons.css">
+
+</head>
+
+<body>
+
+<header id="header" class="header fixed-top d-flex align-items-center">
+
+  <div class="d-flex align-items-center justify-content-between">
+    <a href="index.html" class="logo d-flex align-items-center">
+      <img src="assets/img/logo.png" alt="">
+      <span class="d-none d-lg-block">NiceAdmin</span>
+    </a>
+    <i class="bi bi-list toggle-sidebar-btn"></i>
+  </div>
+
+
+
+  <nav class="header-nav ms-auto">
+    <ul class="d-flex align-items-center">
+
+      <li class="nav-item dropdown pe-3">
+
+        <a class="nav-link nav-profile d-flex align-items-center pe-0" href="#" data-bs-toggle="dropdown">
+          <i class="bi bi-box-arrow-right"></i>
+          <span>Sign Out</span>
+        </a>
+      </li>
+    </ul>
+  </nav>
+
+</header>
+
+<aside id="sidebar" class="sidebar">
+
+  <ul class="sidebar-nav" id="sidebar-nav">
+
+    <li class="nav-item">
+      <a class="navactive " href="index.html">
+        <i class="bi bi-grid"></i>
+        <span>Accueil</span>
+      </a>
+    </li>
+    <li class="nav-item">
+      <a class="nav-link" href="index.html">
+        <i class="bi bi-grid"></i>
+        <span>Soutenance</span>
+      </a>
+    </li>
+    <li class="nav-item">
+      <a class="nav-link " href="index.html">
+        <i class="bi bi-grid"></i>
+        <span>Gestion des enseignants</span>
+      </a>
+    </li>
+    <li class="nav-item">
+      <a class="nav-link " href="index.html">
+        <i class="bi bi-grid"></i>
+        <span>Gestion des etudiants</span>
+      </a>
+    </li>
+    <li class="nav-item">
+      <a class="nav-link " href="index.html">
+        <i class="bi bi-grid"></i>
+        <span>Gestion des départements</span>
+      </a>
+    </li>
+    <li class="nav-item">
+      <a class="nav-link " href="index.html">
+        <i class="bi bi-grid"></i>
+        <span>Gestion des filières</span>
+      </a>
+    </li>
+    <li class="nav-item">
+      <a class="nav-link" href="pages-login.html">
+        <i class="bi bi-box-arrow-in-right"></i>
+        <span>Login</span>
+      </a>
+    </li>
+  </ul>
+
+</aside>
+
+<main id="main" class="main">
+
+  <div class="pagetitle">
+    <h1>Soutenance</h1>
+    <nav>
+      <ol class="breadcrumb">
+        <li class="breadcrumb-item"><a href="index.html">Accueil</a></li>
+        <li class="breadcrumb-item active">/</li>
+      </ol>
+    </nav>
+  </div>
+  <nav class="header-nav ms-auto">
+    <ul class="d-flex align-items-center">
+      <!-- Revenue Card -->
+      <div class="col-xxl-4 col-md-6">
+        <div class="card info-card revenue-card">
+
+          <div class="filter">
+            <a class="icon" href="#" data-bs-toggle="dropdown"><i class="bi bi-three-dots"></i></a>
+            <ul class="dropdown-menu dropdown-menu-end dropdown-menu-arrow">
+              <li class="dropdown-header text-start">
+                <h6>Filter</h6>
+              </li>
+
+              <li><a class="dropdown-item" href="#">Today</a></li>
+              <li><a class="dropdown-item" href="#">This Month</a></li>
+              <li><a class="dropdown-item" href="#">This Year</a></li>
+            </ul>
+          </div>
+
+          <div class="card-body">
+            <h5 class="card-title">Revenue <span>| This Month</span></h5>
+
+            <div class="d-flex align-items-center">
+              <div class="card-icon rounded-circle d-flex align-items-center justify-content-center">
+                <i class="bi bi-currency-dollar"></i>
+              </div>
+              <div class="ps-3">
+                <h6>$3,264</h6>
+                <span class="text-success small pt-1 fw-bold">8%</span> <span class="text-muted small pt-2 ps-1">increase</span>
+
+              </div>
+            </div>
+          </div>
+
+        </div>
+      </div><!-- End Revenue Card -->
+
+      <li class="nav-item dropdown">
+
+          </li>
+        </ul>
+      </li>
+    </ul>
+  </nav>
+</main>
+</body>
+<style>
+:root {
+scroll-behavior: smooth;
+}
+
+body {
+font-family: "Open Sans", sans-serif;
+background: #f6f9ff;
+color: #444444;
+}
+
+a {
+color: #4154f1;
+text-decoration: none;
+}
+
+a:hover {
+color: #717ff5;
+text-decoration: none;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+font-family: "Nunito", sans-serif;
+}
+
+/*--------------------------------------------------------------
+# Main
+--------------------------------------------------------------*/
+#main {
+margin-top: 60px;
+padding: 20px 30px;
+transition: all 0.3s;
+}
+
+@media (max-width: 1199px) {
+#main {
+padding: 20px;
+}
+}
+
+/*--------------------------------------------------------------
+# Page Title
+--------------------------------------------------------------*/
+.pagetitle {
+margin-bottom: 10px;
+}
+
+.pagetitle h1 {
+font-size: 24px;
+margin-bottom: 0;
+font-weight: 600;
+color: #012970;
+}
+
+
+
+/ Card /
+.card {
+margin-bottom: 30px;
+border: none;
+border-radius: 5px;
+box-shadow: 0px 0 30px rgba(1, 41, 112, 0.1);
+}
+
+.card-header,
+.card-footer {
+border-color: #ebeef4;
+background-color: #fff;
+color: #798eb3;
+padding: 15px;
+}
+
+.card-title {
+padding: 20px 0 15px 0;
+font-size: 18px;
+font-weight: 500;
+color: #012970;
+font-family: "Poppins", sans-serif;
+}
+
+.card-title span {
+color: #899bbd;
+font-size: 14px;
+font-weight: 400;
+}
+
+.card-body {
+padding: 0 20px 20px 20px;
+}
+
+.card-img-overlay {
+background-color: rgba(255, 255, 255, 0.6);
+}
+
+
+/ Breadcrumbs /
+.breadcrumb {
+font-size: 14px;
+font-family: "Nunito", sans-serif;
+color: #899bbd;
+font-weight: 600;
+}
+
+.breadcrumb a {
+color: #899bbd;
+transition: 0.3s;
+}
+
+.breadcrumb a:hover {
+color: #51678f;
+}
+
+.breadcrumb .breadcrumb-item::before {
+color: #899bbd;
+}
+
+.breadcrumb .active {
+color: #51678f;
+font-weight: 600;
+}
+
+
+.logo {
+line-height: 1;
+}
+
+@media (min-width: 1200px) {
+.logo {
+width: 280px;
+}
+}
+
+.logo img {
+max-height: 26px;
+margin-right: 6px;
+}
+
+.logo span {
+font-size: 26px;
+font-weight: 700;
+color: #012970;
+font-family: "Nunito", sans-serif;
+}
+
+.header {
+transition: all 0.5s;
+z-index: 997;
+height: 60px;
+box-shadow: 0px 2px 20px rgba(1, 41, 112, 0.1);
+background-color: #fff;
+padding-left: 20px;
+}
+
+.header .toggle-sidebar-btn {
+font-size: 32px;
+padding-left: 10px;
+cursor: pointer;
+color: #012970;
+}
+
+.header .search-bar {
+min-width: 360px;
+padding: 0 20px;
+}
+.header-nav ul {
+list-style: none;
+}
+
+
+.sidebar {
+position: fixed;
+top: 60px;
+left: 0;
+bottom: 0;
+width: 300px;
+z-index: 996;
+transition: all 0.3s;
+padding: 20px;
+overflow-y: auto;
+scrollbar-width: thin;
+scrollbar-color: #aab7cf transparent;
+box-shadow: 0px 0px 20px rgba(1, 41, 112, 0.1);
+background-color: #fff;
+}
+
+@media (max-width: 1199px) {
+.sidebar {
+left: -300px;
+}
+}
+
+.sidebar::-webkit-scrollbar {
+width: 5px;
+height: 8px;
+background-color: #fff;
+}
+
+.sidebar::-webkit-scrollbar-thumb {
+background-color: #aab7cf;
+}
+
+@media (min-width: 1200px) {
+
+#main,
+#footer {
+margin-left: 300px;
+}
+}
+
+@media (max-width: 1199px) {
+.toggle-sidebar .sidebar {
+left: 0;
+}
+}
+
+@media (min-width: 1200px) {
+
+.toggle-sidebar #main,
+.toggle-sidebar #footer {
+margin-left: 0;
+}
+
+.toggle-sidebar .sidebar {
+left: -300px;
+}
+}
+
+.sidebar-nav {
+padding: 0;
+margin: 0;
+list-style: none;
+}
+
+.sidebar-nav li {
+padding: 0;
+margin: 0;
+list-style: none;
+}
+
+.sidebar-nav .nav-item {
+margin-bottom: 5px;
+}
+
+.sidebar-nav .nav-heading {
+font-size: 11px;
+text-transform: uppercase;
+color: #899bbd;
+font-weight: 600;
+margin: 10px 0 5px 15px;
+}
+
+.sidebar-nav .nav-link {
+display: flex;
+align-items: center;
+font-size: 15px;
+font-weight: 600;
+color: #4154f1;
+transition: 0.3;
+background: #f6f9ff;
+padding: 10px 15px;
+border-radius: 4px;
+}
+
+.navactive{
+display: flex;
+align-items: center;
+font-size: 15px;
+font-weight: 600;
+color: #fff;
+transition: 0.3;
+background: #4521e2;
+padding: 10px 15px;
+border-radius: 4px;
+}
+
+.sidebar-nav .navactive i {
+font-size: 16px;
+margin-right: 10px;
+color: #fff;
+}
+
+.sidebar-nav .nav-link i {
+font-size: 16px;
+margin-right: 10px;
+color: #4154f1;
+}
+
+.sidebar-nav .nav-link.collapsed i {
+color: #899bbd;
+}
+
+
+.sidebar-nav .nav-link:hover i {
+color: #4154f1;
+}
+
+
+.sidebar-nav .nav-content a {
+display: flex;
+align-items: center;
+font-size: 14px;
+font-weight: 600;
+color: #012970;
+transition: 0.3;
+padding: 10px 0 10px 40px;
+transition: 0.3s;
+}
+
+.sidebar-nav .nav-content a i {
+font-size: 6px;
+margin-right: 8px;
+line-height: 0;
+border-radius: 50%;
+}
+
+.sidebar-nav .nav-content a:hover,
+.sidebar-nav .nav-content a.active {
+color: #4154f1;
+}
+
+.sidebar-nav .nav-content a.active i {
+background-color: #4154f1;
+}
+
+</style>
+</html>
