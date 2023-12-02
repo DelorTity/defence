@@ -8,4 +8,6 @@ import java.util.List;
 public interface SpecialityService {
 
     List<Speciality> findAll();
+
+    Speciality save(Speciality speciality);
 }

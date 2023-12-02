@@ -78,15 +78,15 @@
             </a>
         </li>
         <li class="nav-item">
-            <a class="nav-link " href="index.html">
+            <a class="nav-link " th:href="@{getDepartments}">
                 <i class="bi bi-grid"></i>
-                <span>Gestion des départements</span>
+                <span>Gestion des departement</span>
             </a>
         </li>
         <li class="nav-item">
-            <a class="nav-link " href="index.html">
+            <a class="nav-link" th:href="@{getSpecialities}">
                 <i class="bi bi-grid"></i>
-                <span>Gestion des filières</span>
+                <span>Gestion des filieres</span>
             </a>
         </li>
         <li class="nav-item">
@@ -192,7 +192,7 @@
                                         <div class="col-md-4">
                                             <label for="">VILLE</label>
                                             <input type="text" class="form-control" th:field="*{city}">
-                                        </div>
+                                        </div> 
 
                                         <div class="modal-footer">
                                             <button type="submit" class="btn btn-primary">Sauvegarder</button>

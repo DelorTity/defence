@@ -1,6 +1,5 @@
 package com.soutenances.soutenance.controller;
 
-import com.soutenances.soutenance.dto.UserDto;
 import com.soutenances.soutenance.entities.Speciality;
 import com.soutenances.soutenance.entities.Topic;
 import com.soutenances.soutenance.entities.User;
@@ -25,20 +24,19 @@ public class StudentController {
     @Autowired
     private SpecialityService specialityService;
     @GetMapping("/getStudents")
-    public String getTeachers(Model model) {
+    public String getStudents(Model model) {
         List<Speciality> specialities = specialityService.findAll();
         List<Topic> topicList = topicService.findAll();
         List<User> students = userService.findStudents();
         model.addAttribute("students", students);
         model.addAttribute("student", new User());
         model.addAttribute("topic", topicList);
-        model.addAttribute("speciality", specialities);
         return "getStudents";
     }
 
     @PostMapping("/saveStudent")
-    public String saveTeacher(@ModelAttribute("student") User user) {
-        userService.saveTeacher(user);
+    public String saveStudent(@ModelAttribute("student") User user) {
+        userService.saveStudent(user);
         return "redirect:/getStudent";
     }
 
